@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="iglobe.apple.com.ikidzdemo.FrontPage"
+    android:background="@drawable/mainscreen_bg">
+
+
+    <TextView
+        android:id="@+id/ikidzcare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tagLine"
+        android:layout_centerHorizontal="true"
+        android:text="iKidzCare"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/tagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/for_schools_childcare_camps"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:layout_above="@+id/createAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+    <Button
+        android:id="@+id/createAccount"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_above="@+id/signIn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_above="@+id/bottomLine"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/bottomLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parents: invite your school or daycare"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tagLine"
+        android:layout_marginBottom="13dp" />
+
+</RelativeLayout>
